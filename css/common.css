@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient(to bottom, #F7E811, #3D9613) no-repeat;
+    padding-top: 50px;
+}
+
+.navbar-default {
+    /* background: linear-gradient(to bottom, #D68D1B, #B7E837) !important; */
+    border-radius: 0%;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: rgb(6, 60, 114);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar-header img {
+    height: 36px;
+    margin: 7px;
+}
+
+.footer {
+    margin: 0;
+    padding-top: 50px;
+    background: url("../images/footer.png") no-repeat;
+    background-size: cover;
+}

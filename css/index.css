@@ -1,0 +1,68 @@
+.modal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 80%;
+    /*这个比例可以自己按需调节*/
+    overflow: visible;
+    bottom: inherit;
+    right: inherit;
+}
+
+.header {
+    background: url("../images/sl-1.jpg") no-repeat center center;
+    background-size: 120%;
+    overflow: hidden;
+}
+
+@media screen and (max-width:992px) {
+    .header {
+        background: #F8F8F8;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .header .row {
+        padding-top: 20px;
+    }
+
+    .footer div[class*="col-md-3"] {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .header a {
+        background: #F8F8F8;
+    }
+
+    .header .row {
+        padding-bottom: 20px;
+    }
+
+    .footer div[class*="col-md-3"]::after {
+        content: "";
+        display: block;
+        width: 31px;
+        height: 63px;
+        position: absolute;
+        top: 0;
+        left: -40px;
+        background: url("../images/line.png");
+    }
+}
+
+.footer hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer .link {
+    cursor: pointer;
+}
+
+.footer li {
+    margin-bottom: 10px;
+}

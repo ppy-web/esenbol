@@ -1,0 +1,126 @@
+body {
+    background: url('../images/register.jpg') no-repeat;
+    background-size: 100%, 100%;
+    /* height: 100vh; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* 设置表单样式 */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px auto;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 15px 15px 10px rgba(33, 45, 58, 0.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.form-container form {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.form-container form .tbx {
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    color: #fff;
+}
+
+.form-container form .tbx::placeholder {
+    color: #fff;
+    font-size: 15px;
+}
+
+.form-container form .sub {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    letter-spacing: 5px;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+}
+
+.form-container h1 {
+    z-index: 1;
+    color: #ecf0f1;
+    letter-spacing: 5px;
+    padding-left: 5px;
+    font-size: 50px;
+    font-weight: 100;
+    text-shadow: 5px 5px 5px rgba(33, 45, 58, 0.3);
+}
+
+/* 鼠标进入时元素的样式 */
+.form-container .in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #3498bd;
+    transform: translate(-50%, -50%);
+    /* 使用in动画，持续0.5秒，缓出时间函数，停留在最后一帧 */
+    animation: in 0.5s ease-out forwards;
+}
+
+/* 鼠标离开时元素的样式 */
+.form-container .out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background: #3498bd;
+    transform: translate(-50%, -50%);
+    /* 使用in动画，持续0.5秒，缓出时间函数，停留在最后一帧 */
+    animation: out 0.5s ease-out forwards;
+}
+
+/* 鼠标进入时元素的动画 */
+@keyframes in {
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    100% {
+        width: 1600px;
+        height: 1600px;
+    }
+}
+
+@keyframes out {
+    0% {
+        width: 1600px;
+        height: 1600px;
+    }
+
+    100% {
+        width: 0;
+        height: 0;
+    }
+}

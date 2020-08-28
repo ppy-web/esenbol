@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>果然新鲜</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="glyphicon glyphicon-option-vertical"></span>
+                </button>
+                <img src="./images/logo.png">
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+                    <li><a href="#">蔬果热卖</a></li>
+                    <li><a href="#">全部产品</a></li>
+                    <li><a href="#">行业资讯</a></li>
+                    <li><a href="#">联系我们</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">购物车<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <button type="button" class="btn btn-default navbar-btn" data-toggle="modal"
+                        data-target="#myModal">登录</button>
+                    <a href="./register.html" class="btn btn-default" role="button">注册</a>
+
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">欢迎登录</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">用户名:</label>
+                            <input type="text" class="form-control" style="color:red;">
+                        </div>
+                        <div class="form-group">
+                            <label for="">密码</label>
+                            <input type="password" class="form-control" style="color:red;">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="登陆" class="btn btn-success form-control">
+                        </div>
+                    </form>
+
+                </div>
+                <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>产品详情</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./images/n3.jpg" alt="魔鬼辣椒" class="img-thumbnail">
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <h2>魔鬼辣椒</h2>
+                    <h4>价格：<span>￥64.0</span></h4>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-6">评论：11条</div>
+                        <div class="col-xs-6">收藏：6次</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">购买数量
+                        <input type="number">
+                    </label>
+                </div>
+                <div class="form-group">
+                    <a href="" class="btn btn-success"><span class=""></span>加入购物车</a>
+                    <a href="" class="btn btn-primary"><span class=""></span>立即购买</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+            <!-- 每个a标签里面多了一个 data-toggle="tab"  标签页切换事件-->
+            <!-- a标签的href对应的是要显示的内容 -->
+            <li role="presentation" class="active">
+                <a href="#homegrown" aria-controls="homegrown" role="tab" data-toggle="tab">产品详情</a>
+            </li>
+            <li role="presentation">
+                <a href="#import" aria-controls="import" role="tab" data-toggle="tab">产品评价</a>
+            </li>
+            <li role="presentation">
+                <a href="#fresh" aria-controls="fresh" role="tab" data-toggle="tab">销售记录</a>
+            </li>
+        </ul>
+        <!-- tab内容区域 -->
+        <div class="tab-content" style="background: #fff;">
+            <!-- 每一块的内容 -->
+            <div role="tabpanel" class="tab-pane active" id="homegrown">
+                <div class="row text-center">
+                    <img src="./images/detail-1.png" alt="">
+                    <img src="./images/detail-2.png" alt="">
+                    <img src="./images/detail-3.png" alt="">
+                    <img src="./images/detail-4.png" alt="">
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane active" id="import">
+                <div class="row text-center">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h3>好评率：<span>80%</span></h3>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 80%;">
+                                    <span class="">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane active" id="fresh">
+                <div style="width: 100%;">
+                    <ul class="list-group">
+                        <li class="list-group-item">第一位</li>
+                        <li class="list-group-item">第二位</li>
+                        <li class="list-group-item">3</li>
+                        <li class="list-group-item">4</li>
+                        <li class="list-group-item">5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 尾部 -->
+    <div class="container-fluid footer" style="position: relative; margin-top: 30px;">
+        <div class="container">
+            <ul class="row" style="margin-right: 0;">
+                <div class="col-md-3 col-xs-6">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="./images/safe.png" alt="">
+                        </div>
+                        <div class="col-xs-8">
+                            <h4>食品安全</h4>
+                            <small>精选产品 严格质检</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 line">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="./images/transport.png" alt="">
+                        </div>
+                        <div class="col-xs-8">
+                            <h4>全城冷链</h4>
+                            <small>可靠物流 安全可控</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 line">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="./images/green.png" alt="">
+                        </div>
+                        <div class="col-xs-8">
+                            <h4>绿色天然</h4>
+                            <small>绿色生态 蔬果精选</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6 line">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="./images/quality.png" alt="">
+                        </div>
+                        <div class="col-xs-8">
+                            <h4>产地直采</h4>
+                            <small>限定产源 质量保证</small>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+
+            <hr>
+
+            <div class="row text-center link">
+                <ul class="col-xs-6 col-md-3 list-unstyled">
+                    <h3>服务保障</h3>
+                    <li>正品保证</li>
+                    <li>7天无理由退换</li>
+                    <li>退货返运费</li>
+                    <li>7X15小时客户服务</li>
+                    <hr>
+                </ul>
+                <ul class="col-xs-6 col-md-3 list-unstyled">
+                    <h3>支付方式</h3>
+                    <li>公司转账</li>
+                    <li>货到付款</li>
+                    <li>在线支付</li>
+                    <li>分期付款</li>
+                    <hr>
+                </ul>
+                <ul class="col-xs-6 col-md-3 list-unstyled">
+                    <h3>商家服务</h3>
+                    <li>培训中心</li>
+                    <li>广告服务</li>
+                    <li>服务市场</li>
+                    <br>
+                    <hr>
+                </ul>
+                <ul class="col-xs-6 col-md-3 list-unstyled">
+                    <h3>服务保障</h3>
+                    <li>免运费</li>
+                    <li>海外配送</li>
+                    <li>EMS</li>
+                    <li>211限时达</li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="row text-center" style="color: rgb(172, 172, 172);">
+                <p>&copy;2016 果然新鲜 版权所有</p>
+                <p><a href="" style="color: black;">手机版</a> | 本站使用bootstrop技术搭建 | <a
+                        href="./layuimini/page/login-2.html" style="color: black;">管理登录</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
